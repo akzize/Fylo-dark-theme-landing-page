@@ -15,7 +15,7 @@ main{
         color: $white;
 
         &__img{
-            width: 70%;
+            width: 50%;
 
             img{
                 width: 100%;
@@ -28,23 +28,24 @@ main{
             }
             h1{
                 margin-bottom: 1rem;
-                font-size: 2.1rem;
+                font-size: 1.85rem;
                 @media (max-width:$sm){
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     // line-height: 2rem;
                 }
                 
             }
             p{
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 line-height: 1.6rem;
                 @media (max-width:$md){
-                    font-size: 1.1rem;
+                    font-size: .9rem;
                 }
             }
 
             .btn-start{
                 background-color: $blue;
+                
 
                 &:hover{
                     background-color: $cyan;

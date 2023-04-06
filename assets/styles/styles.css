@@ -76,7 +76,7 @@ main .intro {
   color: hsl(0deg, 0%, 100%);
 }
 main .intro__img {
-  width: 70%;
+  width: 50%;
 }
 main .intro__img img {
   width: 100%;
@@ -88,20 +88,20 @@ main .intro__img img {
 }
 main .intro__text h1 {
   margin-bottom: 1rem;
-  font-size: 2.1rem;
+  font-size: 1.85rem;
 }
 @media (max-width: 576px) {
   main .intro__text h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 main .intro__text p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.6rem;
 }
 @media (max-width: 768px) {
   main .intro__text p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 main .intro__text .btn-start {
@@ -123,12 +123,14 @@ main .intro__text .btn-start:hover {
 /* ------------------------------- components ------------------------------- */
 /* -------------------------------- variables ------------------------------- */
 .btn {
-  padding: 0.6rem 4rem;
-  font-size: 1.5rem;
+  padding: 0.4rem 2.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   border-radius: 6rem;
   border: none;
   color: hsl(0deg, 0%, 100%);
+  transition: 0.3s;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .btn {
