@@ -1,0 +1,55 @@
+@use '../variables' as *;
+@use '../components/mixins' as *;
+
+main{
+    padding-top: 7rem;
+    font-family: $ralway;
+    background-image: url('../../images/bg-curvy-desktop.svg');
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .intro{
+        text-align: center;
+        @include flex;
+        flex-direction: column;
+        color: $white;
+
+        &__img{
+            width: 70%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        &__text{
+            @media (min-width:$md){
+                width: 60%;
+            }
+            h1{
+                margin-bottom: 1rem;
+                font-size: 2.1rem;
+                @media (max-width:$sm){
+                    font-size: 1.8rem;
+                    // line-height: 2rem;
+                }
+                
+            }
+            p{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                @media (max-width:$md){
+                    font-size: 1.1rem;
+                }
+            }
+
+            .btn-start{
+                background-color: $blue;
+
+                &:hover{
+                    background-color: $cyan;
+                }
+            }
+        }
+    }
+}

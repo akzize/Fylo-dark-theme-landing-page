@@ -1,0 +1,14 @@
+@use '../variables' as *;
+
+.btn{
+    padding: .6rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 6rem;
+    border: none;
+    color: $white;
+
+    @media (max-width: $md) {
+        font-size: 1.1rem;
+    }
+}

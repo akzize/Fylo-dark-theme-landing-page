@@ -1,0 +1,139 @@
+/* -------------------------------- variables ------------------------------- */
+/* -------------------------------- sections -------------------------------- */
+/* -------------------------------- variables ------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  background-color: hsl(217deg, 28%, 15%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 2.5rem;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.3rem;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0.4rem;
+  width: 100%;
+  padding-top: 2rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+header .container .logo {
+  width: 6rem;
+}
+header .container .logo img {
+  width: 100%;
+}
+header .container .nav_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+header .container .nav_items > * {
+  color: hsl(0deg, 0%, 80%);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+header .container .nav_items > *:hover {
+  color: hsl(0deg, 0%, 100%);
+  border-bottom: 0.1rem solid hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+
+/* -------------------------------- variables ------------------------------- */
+main {
+  padding-top: 7rem;
+  font-family: "Raleway", sans-serif;
+  background-image: url("../../images/bg-curvy-desktop.svg");
+  background-size: 100% 40%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+main .intro {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(0deg, 0%, 100%);
+}
+main .intro__img {
+  width: 70%;
+}
+main .intro__img img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  main .intro__text {
+    width: 60%;
+  }
+}
+main .intro__text h1 {
+  margin-bottom: 1rem;
+  font-size: 2.1rem;
+}
+@media (max-width: 576px) {
+  main .intro__text h1 {
+    font-size: 1.8rem;
+  }
+}
+main .intro__text p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+@media (max-width: 768px) {
+  main .intro__text p {
+    font-size: 1.1rem;
+  }
+}
+main .intro__text .btn-start {
+  background-color: hsl(198deg, 60%, 50%);
+}
+main .intro__text .btn-start:hover {
+  background-color: hsl(176deg, 68%, 64%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/* ------------------------------- components ------------------------------- */
+/* -------------------------------- variables ------------------------------- */
+.btn {
+  padding: 0.6rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 6rem;
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+}
+@media (max-width: 768px) {
+  .btn {
+    font-size: 1.1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
